@@ -1,17 +1,16 @@
 package com.example.demo;
 
-public class UserResponse {
-    private  int id;
-    private  String name;
+class UsersResponse {
+    private int id;
+    private String name;
 
-    public UserResponse(int id, String name){
+    public UsersResponse(int id, String name) {
         this.id = id;
         this.name = name;
     }
-    //http://localhost:8080/users
-    // POJO (Plain Old Java Object)
-    // Getter /Setter methods ->code->generate->getter setter
 
+    // POJO (Plain Old Java Object)
+    // Getter/Setter methods
     public int getId() {
         return id;
     }
@@ -27,5 +26,4 @@ public class UserResponse {
     public void setName(String name) {
         this.name = name;
     }
-
 }
